@@ -1,10 +1,5 @@
 package edu.asu.mars.admin;
 
-/**
- * User: npiace
- * Date: 10/11/17
- * Time: 12:56 PM
- */
 class CpuTest {
     void runTest(Integer seconds) {
         System.out.println("Starting CPU test for " + seconds + " seconds");

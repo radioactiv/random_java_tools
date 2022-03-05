@@ -6,7 +6,6 @@ class Properties {
 
     //Print everything
     void printProperties() {
-//    Properties props = System.getProperties();
         Object[] propNames = System.getProperties().stringPropertyNames().toArray();
         Arrays.sort(propNames);
         for (Object propName : propNames) {
@@ -16,7 +15,6 @@ class Properties {
 
     //Print a single property
     void printProperties(String property) {
-//    Properties props = System.getProperties();
         boolean foundProperty = false;
         Object[] propNames = System.getProperties().stringPropertyNames().toArray();
         Arrays.sort(propNames);

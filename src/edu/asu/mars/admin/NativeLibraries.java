@@ -25,13 +25,10 @@ public class NativeLibraries
     {
         this.loadedLibraryNames = ClassLoader.class.getDeclaredField("loadedLibraryNames");
         loadedLibraryNames.setAccessible(true);
-
         this.systemNativeLibraries = ClassLoader.class.getDeclaredField("systemNativeLibraries");
         systemNativeLibraries.setAccessible(true);
-
         this.nativeLibraries = ClassLoader.class.getDeclaredField("nativeLibraries");
         nativeLibraries.setAccessible(true);
-
         Class<?> nativeLibrary = null;
         for (Class<?> nested : ClassLoader.class.getDeclaredClasses())
         {

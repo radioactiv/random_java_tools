@@ -16,6 +16,7 @@ class MaxMemTest {
     private long totalPhysMem;
     private long totalSwap;
     private long totalMem;
+    private int  totalPhysMemMb;
     private OperatingSystemMXBean os;
 
     private void sleep(int milliseconds) {
@@ -39,12 +40,12 @@ class MaxMemTest {
         totalPhysMem = os.getTotalPhysicalMemorySize();
         totalSwap = os.getTotalSwapSpaceSize();
         totalMem = totalPhysMem + totalSwap;
+        totalPhysMemMb= (int) totalPhysMem / 1024 / 1024;
     }
 
     void RealMaxMemTest() {
         List listOfBytes = new ArrayList();
         int run = 0;
-
         long lastRun = new Date().getTime();
         long currentRun = new Date().getTime();
         while (true) {
@@ -53,7 +54,29 @@ class MaxMemTest {
             listOfBytes.add(mb);
             sleep(5);
             System.out.print(".");
-            if (run % 40 == 0) {
+            if (run % 40 == 0) { //print every 40 times
+                System.out.printf("Allocated: %sMB (Free: %sMB Physical, %sMB Swap)\n", getUsedMemory(), os.getFreePhysicalMemorySize() / ONE_MEGABYTE, os.getFreeSwapSpaceSize() / ONE_MEGABYTE);
+                lastRun = currentRun;
+                currentRun = new Date().getTime();
+                System.out.println("Time since last print: " + (currentRun - lastRun) + "ms");
+            }
+
+        }
+    }
+    void MaxRamMemTest() {
+        List listOfBytes = new ArrayList();
+        int run = 0;
+        long lastRun = new Date().getTime();
+        long currentRun = new Date().getTime();
+        int mbsAllocated = 0;
+        while (mbsAllocated <= totalPhysMemMb) {
+            run++;
+            byte[] mb = new byte[ONE_MEGABYTE];
+            listOfBytes.add(mb);
+            mbsAllocated++;
+            sleep(5);
+            System.out.print(".");
+            if (run % 40 == 0) { //print every 40 times
                 System.out.printf("Allocated: %sMB (Free: %sMB Physical, %sMB Swap)\n", getUsedMemory(), os.getFreePhysicalMemorySize() / ONE_MEGABYTE, os.getFreeSwapSpaceSize() / ONE_MEGABYTE);
                 lastRun = currentRun;
                 currentRun = new Date().getTime();
@@ -64,7 +87,6 @@ class MaxMemTest {
     }
 
     void FakeMaxMemTest() {
-
         try {
             String jarPath = new File(Tools.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).getCanonicalPath();
             String javaBinary = System.getProperty("java.home") + System.getProperty("file.separator") + "bin" + System.getProperty("file.separator") + "java";

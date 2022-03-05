@@ -5,6 +5,7 @@ import javafx.embed.swing.JFXPanel;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Tooltip;
 import javafx.scene.text.*;
 
 import javax.swing.*;
@@ -17,9 +18,9 @@ class FontList {
     //Print everything
     void showFonts() {
         JFrame baseFrame = new JFrame("Font Example");
-        baseFrame.setSize(450, 900);
+        baseFrame.setSize(455, 910);
         baseFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        baseFrame.setResizable(false);
         baseFrame.add(jfxPanel);
         Platform.runLater(new Runnable() {
             @Override
@@ -27,7 +28,6 @@ class FontList {
                 initFX(jfxPanel);
             }
         });
-
         baseFrame.setVisible(true);
     }
 
@@ -41,11 +41,12 @@ class FontList {
         Group root = new Group();
         Scene scene = new Scene(root);
         Group scrollGroup = new Group();
-        String fonts[] = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+        String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
         Arrays.sort(fonts);
         javafx.scene.control.ScrollPane scrollPane = new ScrollPane();
         scrollPane.setPrefSize(450, 880);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         int offset = 40;
         for (String font : fonts) {
             Text t = new Text(font);
@@ -53,6 +54,7 @@ class FontList {
             t.setX(45);
             t.setY(offset);
             offset += 35;
+            Tooltip.install(t,new Tooltip(font));
             scrollGroup.getChildren().add(t);
         }
         scrollPane.setContent(scrollGroup);

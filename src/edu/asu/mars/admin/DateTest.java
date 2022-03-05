@@ -7,6 +7,8 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+//This is for testing if leap seconds work correctly
+
 public class DateTest {
 
     public DateTest() {
