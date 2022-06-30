@@ -10,32 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c01d60cc-bcb5-4703-8bf6-fd6d8fa172ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/MacDirectoryAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/sslProps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/java_admin_tools/java_admin_tools.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_admin_tools/java_admin_tools.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/ClassScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/ClassScope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/CpuTest$BusyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/CpuTest$BusyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/CpuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/CpuTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/FontList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/FontList$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/FontList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/FontList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/MaxMemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/MaxMemTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/NativeLibraries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/NativeLibraries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/Properties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/SecurityProps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/SecurityProps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/SystemLibs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/SystemLibs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/Tools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/Tools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/ClassScope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/ClassScope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/CpuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/CpuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/FontList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/FontList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/MaxMemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/MaxMemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/NativeLibraries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/NativeLibraries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/Properties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/SecurityProps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/SecurityProps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/SystemLibs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/SystemLibs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/MacDirectoryAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/MacDirectoryAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/Tools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,20 +263,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.asu.mars.admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/doc" />
       <recent name="$PROJECT_DIR$/lib/src" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.asu.mars.admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/src" />
       <recent name="$PROJECT_DIR$/lib/doc" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.asu.mars.admin" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.jfc dir">
+  <component name="RunManager" selected="Application.ssl">
     <configuration default="true" type="AntRunConfigurationType" factoryName="Ant build" debug-port="25000" max-memory="256" logging-level="0">
       <method />
     </configuration>
@@ -797,6 +778,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ssl" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.asu.mars.admin.Tools" />
+      <module name="java_admin_tools" />
+      <option name="PROGRAM_PARAMETERS" value="-S" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -829,6 +818,7 @@
       <item itemvalue="Application.mac-dir" />
       <item itemvalue="Application.jfc dir" />
       <item itemvalue="Application.properties" />
+      <item itemvalue="Application.ssl" />
       <item itemvalue="Application.date" />
       <item itemvalue="Application.cpu" />
     </list>
@@ -854,6 +844,9 @@
       <workItem from="1646256242232" duration="71000" />
       <workItem from="1646331670391" duration="103000" />
       <workItem from="1646497714856" duration="3480000" />
+      <workItem from="1646674502670" duration="41000" />
+      <workItem from="1656537748954" duration="653000" />
+      <workItem from="1656600310706" duration="823000" />
     </task>
     <servers />
   </component>

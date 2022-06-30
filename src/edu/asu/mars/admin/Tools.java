@@ -12,20 +12,21 @@ public class Tools {
         OptionGroup group = new OptionGroup();
         group.setRequired(true);
         Options options = new Options();
-        group.addOption(OptionBuilder.withLongOpt("flock").withDescription("test lock on <FILE>").hasOptionalArg().withArgName("FILE").create('f'));
+        group.addOption(OptionBuilder.withLongOpt("cpu").withDescription("Runs a CPU intensive task for <SEC> seconds").hasArgs().withArgName("SEC").create("c"));
         group.addOption(OptionBuilder.withLongOpt("mac-dir").withDescription("try to prompt user for access to <Directory>").hasOptionalArg().withArgName("Directory").create('d'));
+        group.addOption(OptionBuilder.withLongOpt("env").withDescription("print entire environment, or just <ENV>").hasOptionalArg().withArgName("ENV").create("e"));
+        group.addOption(OptionBuilder.withLongOpt("flock").withDescription("test lock on <FILE>").hasOptionalArg().withArgName("FILE").create('f'));
+        group.addOption(OptionBuilder.withLongOpt("fonts").withDescription("show all system fonts").create("F"));
         group.addOption(OptionBuilder.withLongOpt("jfc-dir").withDescription("try to prompt user for access to <Directory> using JFileChooser").hasOptionalArg().withArgName("Directory").create('j'));
         group.addOption(OptionBuilder.withLongOpt("property").withDescription("print all system properties, or just <PROPERTY>").hasOptionalArg().withArgName("PROPERTY").create("p"));
         group.addOption(OptionBuilder.withLongOpt("libs").withDescription("print all system libraries").create("l"));
-        group.addOption(OptionBuilder.withLongOpt("env").withDescription("print entire environment, or just <ENV>").hasOptionalArg().withArgName("ENV").create("e"));
         group.addOption(OptionBuilder.withLongOpt("max").withDescription("test max open files").create("m"));
-        group.addOption(OptionBuilder.withLongOpt("sec").withDescription("list java security parameters").create("s"));
-        group.addOption(OptionBuilder.withLongOpt("nl").withDescription("list loaded java native libraries").create("n"));
-        group.addOption(OptionBuilder.withLongOpt("fonts").withDescription("show all system fonts").create("F"));
         group.addOption(OptionBuilder.withLongOpt("max-mem").withDescription("attempt to allocate as much memory as possible (DANGEROUS!)").create("M"));
-        group.addOption(OptionBuilder.withLongOpt("zzmem").withDescription("real max-mem (don't run!!!  it will crash computer!)").create("z"));
+        group.addOption(OptionBuilder.withLongOpt("nl").withDescription("list loaded java native libraries").create("n"));
         group.addOption(OptionBuilder.withLongOpt("ram").withDescription("test filling ram").create("r"));
-        group.addOption(OptionBuilder.withLongOpt("cpu").withDescription("Runs a CPU intensive task for <SEC> seconds").hasArgs().withArgName("SEC").create("c"));
+        group.addOption(OptionBuilder.withLongOpt("sec").withDescription("list java security providers").create("s"));
+        group.addOption(OptionBuilder.withLongOpt("zzmem").withDescription("real max-mem (don't run!!!  it will crash computer!)").create("z"));
+        group.addOption(OptionBuilder.withLongOpt("ssl").withDescription("list java supported SSL information").create("S"));
 //        group.addOption(OptionBuilder.withLongOpt("date").withDescription("date testing").create("d"));   //Not entirely sure what this was for, maybe leap seconds?
         options.addOptionGroup(group);
 
@@ -74,6 +75,8 @@ public class Tools {
                 new OpenFilesLimit().findOpenFilesLimit();
             } else if (line.hasOption("sec")) {
                 new SecurityProps().listProviders();
+            } else if (line.hasOption("ssl")) {
+                new sslProps().listProps();
             } else if (line.hasOption("ram")) {
                 new MaxMemTest().MaxRamMemTest();
             } else if (line.hasOption("max-mem")) {

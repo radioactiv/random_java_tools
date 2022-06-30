@@ -16,7 +16,6 @@ public class MacDirectoryAccess {
         fd.setVisible(true);
         String filename = fd.getFile();
         if (filename == null) {
-//            System.out.println("You cancelled the choice");
             System.exit(0); // User Closed the picker
         } else {
             System.out.println("You chose " + filename);
@@ -28,10 +27,8 @@ public class MacDirectoryAccess {
         JFileChooser jfc = new JFileChooser();
         String userHome = System.getProperty("user.home");
         String pathSeparator = System.getProperty("file.separator");
-//        jfc.setDirectory(userHome + pathSeparator + directory);
         jfc.setCurrentDirectory(new File(userHome + pathSeparator + directory));
         jfc.showOpenDialog(baseFrame);
-        //jfc.setVisible(true);
         File f = jfc.getSelectedFile();
         if (f == null){
             System.exit(0);
@@ -39,8 +36,5 @@ public class MacDirectoryAccess {
         else{
             System.exit(0);
         }
-    }
-    void testDirectories() {
-        //Try to access contents of [home]/Documents, Desktop, and Downloads folder in each dialog.
-    }
+    }    
 }
