@@ -27,6 +27,8 @@ public class Tools {
         group.addOption(OptionBuilder.withLongOpt("sec").withDescription("list java security providers").create("s"));
         group.addOption(OptionBuilder.withLongOpt("zzmem").withDescription("real max-mem (don't run!!!  it will crash computer!)").create("z"));
         group.addOption(OptionBuilder.withLongOpt("ssl").withDescription("list java supported SSL information").create("S"));
+        group.addOption(OptionBuilder.withLongOpt("jm1").withDescription("Test JMARS Authentication with built-in calls").create("j"));
+        group.addOption(OptionBuilder.withLongOpt("jm2").withDescription("Test JMARS Authentication with HTTPCommons").create("J"));
 //        group.addOption(OptionBuilder.withLongOpt("date").withDescription("date testing").create("d"));   //Not entirely sure what this was for, maybe leap seconds?
         options.addOptionGroup(group);
 
@@ -77,6 +79,10 @@ public class Tools {
                 new SecurityProps().listProviders();
             } else if (line.hasOption("ssl")) {
                 new sslProps().listProps();
+            } else if (line.hasOption("jm1")) {
+                new jmarsAuthTest().internalTest();
+            } else if (line.hasOption("jm2")) {
+                new jmarsAuthTest().commonsTest();
             } else if (line.hasOption("ram")) {
                 new MaxMemTest().MaxRamMemTest();
             } else if (line.hasOption("max-mem")) {

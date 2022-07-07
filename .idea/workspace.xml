@@ -9,12 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01d60cc-bcb5-4703-8bf6-fd6d8fa172ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/sslProps.java" afterDir="false" />
+    <list default="true" id="c01d60cc-bcb5-4703-8bf6-fd6d8fa172ff" name="Default" comment="new features">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_httpclient_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-codec-1.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-httpclient-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/jmarsAuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/java_admin_tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java_admin_tools.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_admin_tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_admin_tools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/java_admin_tools/java_admin_tools.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_admin_tools/java_admin_tools.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/MacDirectoryAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/MacDirectoryAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/Tools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_admin_tools/edu/asu/mars/admin/Tools.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/asu/mars/admin/sslProps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/mars/admin/sslProps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +86,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -127,6 +137,9 @@
     <option name="height" value="2082" />
   </component>
   <component name="ProjectId" id="1pqdsS1yTAxLjfObatR8iVzpbe8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -223,6 +236,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="false" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
@@ -248,7 +262,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-logging-1.2.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -257,7 +271,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -279,7 +293,7 @@
       <recent name="edu.asu.mars.admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ssl">
+  <component name="RunManager" selected="Application.jm-commons">
     <configuration default="true" type="AntRunConfigurationType" factoryName="Ant build" debug-port="25000" max-memory="256" logging-level="0">
       <method />
     </configuration>
@@ -727,6 +741,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="jm-commons" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.asu.mars.admin.Tools" />
+      <module name="java_admin_tools" />
+      <option name="PROGRAM_PARAMETERS" value="-J" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jm-internal" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.asu.mars.admin.Tools" />
+      <module name="java_admin_tools" />
+      <option name="PROGRAM_PARAMETERS" value="-j" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="libs" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.asu.mars.admin.Tools" />
       <module name="java_admin_tools" />
@@ -819,6 +849,8 @@
       <item itemvalue="Application.jfc dir" />
       <item itemvalue="Application.properties" />
       <item itemvalue="Application.ssl" />
+      <item itemvalue="Application.jm-commons" />
+      <item itemvalue="Application.jm-internal" />
       <item itemvalue="Application.date" />
       <item itemvalue="Application.cpu" />
     </list>
@@ -846,8 +878,17 @@
       <workItem from="1646497714856" duration="3480000" />
       <workItem from="1646674502670" duration="41000" />
       <workItem from="1656537748954" duration="653000" />
-      <workItem from="1656600310706" duration="823000" />
+      <workItem from="1656600310706" duration="2255000" />
+      <workItem from="1657129946701" duration="5296000" />
     </task>
+    <task id="LOCAL-00001" summary="new features">
+      <created>1656601165527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656601165527</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -922,6 +963,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="new features" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
